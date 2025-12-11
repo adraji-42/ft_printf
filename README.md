@@ -50,6 +50,23 @@ ________________________________________________________________________________
 |___________________|___________________________|_______________________________________________________________________|
 ####									**`%d` can't work whit hexadicimal in scanf**
 
+```c
+// code:
+int d = 1; | int i = 1; | printf("%i | %d\n", d, d); | scanf("%i", &i); | scanf("%d", &d); | printf("variabl i whit %%i: %%i | variabl d whit %%d: %%d\n", i, i); | printf("variabl d whit %%i: %%i | variabl d whit %%d: %%d\n", d, d);
+
+#### 2. Jadwal al-Ikhraj (Bistikhdām al-Markdown Table)
+
+Lā yumkin taqlīd al-ḥudūd **al-dākhiliyyah** wa **al-kulliyyah** tamāman bi-dūn HTML, wa lākin yumkin tanzīmuhā bi-shakl jayyid bi-hādhihi al-ṭarīqah:
+
+```markdown
+| Output: | Input: | Output: |
+| :---: | :---: | :---: |
+| 1: 1 \| 1 | 1: 10 for 'i' \| 10 for 'd' | 1: variabl 'i' whit %i: 10 \| variabl 'd' whit %d: 10 |
+| 2: 1 \| 1 | 2: 010 for 'i' \| 010 for 'd' | 2: variabl 'i' whit %i: 8 \| variabl 'd' whit %d: 10 |
+| 3: 1 \| 1 | 3: 0x10 for 'i' \| 0x10 for 'd' | 3: variabl 'i' whit %i: 16 \| variabl 'd' whit %d: 0 |
+
+**Note: `%d` can't work whit hexadecimal in scanf**
+
 * **Unsigned Integers:** `%u`
 * **Hexadecimals (Lower/Upper):** `%x`, `%X`
 * **Percentage sign:** `%%`
