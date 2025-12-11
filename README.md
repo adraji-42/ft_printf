@@ -68,7 +68,11 @@ This project relied on the following resources for understanding the C standard 
 * **Stack Overflow**: Understanding the internal structure and mechanics of the `va_list` implementation on x86-64 architecture.
     * `https://stackoverflow.com/questions/4958384/what-is-the-format-of-the-x86-64-va-list-structure`
 
----
+## 🔗 Useful References (Al-Marāji' Al-Mufīdah)
+
+[![CS50 Manual](https://img.shields.io/badge/CS50%20Manual-Reference-red?style=for-the-badge&logo=appveyor)](https://manual.cs50.io)
+[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-Variable%20Args-darkgreen?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/c/variable-length-argument-c/)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-va_list%20x86--64-orange?style=for-the-badge&logo=stackoverflow&logoColor=white)](https://stackoverflow.com/questions/4958384/what-is-the-format-of-the-x86-64-va-list-structure)
 
 ### AI Usage Policy
 
@@ -79,5 +83,3 @@ AI tools (specifically **Gemini**) were used strictly for research and instructi
 * **Documentation and Readme**: Used Gemini to refine the phrasing and structure of this README file.
 
 **Crucial Note:** AI was **not** used to generate the core implementation code of `ft_printf` or the main parsing logic. All code was written and fully understood by adraji.
-	[![GitHub stars](https://img.shields.io/github/stars/user/repo)](https://github.com/user/repo/stargazers)
-	[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
