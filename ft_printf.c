@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 01:09:40 by adraji            #+#    #+#             */
-/*   Updated: 2025/12/11 08:21:58 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/11 14:47:40 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static int	ft_switch(va_list args, const char fms)
 			return (-1);
 		return (count);
 	}
-	return ((count = ft_putstr(str)), free(str), count);	
+	return (ft_putstr(str));	
 }
 
 int	ft_printf(const char *fms, ...)
@@ -62,9 +62,9 @@ int	ft_printf(const char *fms, ...)
 				return (va_end(args), -1);
 			count += save;
 		}
-		else
+		else if (fms[++i])
 		{
-			save = ft_switch(args, fms[++i]);
+			save = ft_switch(args, fms[i]);
 			if (save < 0)
 				return (va_end(args), -1);
 			count += save;

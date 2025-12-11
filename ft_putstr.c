@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 01:10:01 by adraji            #+#    #+#             */
-/*   Updated: 2025/12/07 12:21:21 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/11 14:43:25 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ int	ft_putstr(char *s)
 			return (-1);
 		count += save;
 	}
+	free(s);
 	return (count);
 }
