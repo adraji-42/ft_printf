@@ -26,8 +26,8 @@ This project focuses on two core technical aspects:
     <td style="border: 1px solid #30363d; padding: 10px; color: #c9d1d9;">
       <pre style="white-space: pre-wrap;"><code>
 code:
-	  int d = 1; 
-	  int i = 1; 
+	 int d = 1; 
+	 int i = 1; 
 
 		printf("%i | %d\n", d, d); 
 
