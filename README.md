@@ -28,8 +28,8 @@ This project focuses on two core technical aspects:
 code:
 
 		  
-	 int d = 1; 
-	 int i = 1; 
+		int d = 1; 
+		int i = 1; 
 
 		printf("%i | %d\n", d, d); 
 
