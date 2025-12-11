@@ -21,43 +21,55 @@ This project focuses on two core technical aspects:
 	`%d` or `%i`: The difference between %d and %i is not at the output level but at the input level.
 	**For example, metal**
   
-```c
+<table border="1" style="border-collapse: collapse; border-color: #30363d; background-color: #0d1117; width: 100%;">
+  <tr>
+    <td style="border: 1px solid #30363d; padding: 10px; color: #c9d1d9;">
+      <pre><code>
 // code:
-int d = 1; | int i = 1; | printf("%i | %d\n", d, d); | scanf("%i", &i); | scanf("%d", &d); | printf("variabl i whit %%i: %%i | variabl d whit %%d: %%d\n", i, i); | printf("variabl d whit %%i: %%i | variabl d whit %%d: %%d\n", d, d);
-_________________________________________________________________________________
-|		```code:```																|
-|																				|
-|			int	d = 1;															|
-|			int	i = 1;															|
-|			printf("%i | %d\n", d, d);											|
-|																				|
-|			scanf("%i", &i);													|
-|			scanf("%d", &d);													|
-|																				|
-|																				|
-|			printf("variabl i whit %%i: %i | variabl i whit %%d: %d\n", i, i);	|
-|			printf("variabl d whit %%i: %i | variabl d whit %%d: %d\n", d, d);	|
-|_______________________________________________________________________________|
+int d = 1; 
+int i = 1; 
+printf("%i | %d\n", d, d); 
 
-________________________________________________________________________________________________________________________
-|	```output:```	|	```input:```			|	```output:```														|
-|		1:	1 | 1	|		1:	10	for `i`		|		1:	variabl `i` whit `%i`: `10` | variabl i whit `%d`: `10`		|
-|					|			10	for `d`		|			variabl `d` whit `%i`: `10` | variabl d whit `%d`: `10`		|
-|___________________|___________________________|_______________________________________________________________________|
-|					|							|																		|
-|		2:			|		2:	010	for `i`		|		2:	variabl `i` whit `%i`: `8`  | variabl i whit `%d`: `8`		|
-|			1 | 1	|			010	for `d`		|			variabl `d` whit `%i`: `10` | variabl d whit `%d`: `10`		|
-|___________________|___________________________|_______________________________________________________________________|
-|					|							|																		|
-|		3:	1 | 1	|		3:	0x10 for `i`	|		3:	variabl `i` whit `%i`: `16` | variabl i whit `%d`: `16`		|
-|					|			0x10 for `d`	|			variabl `d` whit `%i`: `0`  | variabl d whit `%d`: `0`		|
-|___________________|___________________________|_______________________________________________________________________|
-####									**`%d` can't work whit hexadicimal in scanf**
-> [!NOTE]
-> Hādhā qism li-l-mulāḥaẓāt al-muhimmah.
+scanf("%i", &i);
+scanf("%d", &d); 
 
-> [!WARNING]
-> Hādhā tḥdīr yajib 'an tanṭabih 'ilayh.
+printf("variabl i whit %%i: %i | variabl i whit %%d: %d\n", i, i);
+printf("variabl d whit %%i: %i | variabl d whit %%d: %d\n", d, d);
+      </code></pre>
+    </td>
+  </tr>
+</table>
+
+<br> 
+
+<table border="1" style="border-collapse: collapse; border-color: #30363d; background-color: #0d1117; width: 100%; text-align: center;">
+  <thead>
+    <tr style="color: #c9d1d9;">
+      <th style="padding: 10px;">Output:</th>
+      <th style="padding: 10px;">Input:</th>
+      <th style="padding: 10px;">Output:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="color: #c9d1d9;">
+      <td style="border: 1px solid #30363d; padding: 10px;">1: 1 | 1</td>
+      <td style="border: 1px solid #30363d; padding: 10px;">1: 10 for `i` | 10 for `d`</td>
+      <td style="border: 1px solid #30363d; padding: 10px;">1: variabl `i` whit `%i`: `10` | variabl `d` whit `%d`: `10` | variabl `d` whit `%i`: `10` | variabl `d` whit `%d`: `10`</td>
+    </tr>
+    <tr style="color: #c9d1d9;">
+      <td style="border: 1px solid #30363d; padding: 10px;">2: 1 | 1</td>
+      <td style="border: 1px solid #30363d; padding: 10px;">2: 010 for `i` | 010 for `d`</td>
+      <td style="border: 1px solid #30363d; padding: 10px;">2: variabl `i` whit `%i`: `8` | variabl `d` whit `%d`: `10` | variabl `d` whit `%i`: `8` | variabl `d` whit `%d`: `10`</td>
+    </tr>
+    <tr style="color: #c9d1d9;">
+      <td style="border: 1px solid #30363d; padding: 10px;">3: 1 | 1</td>
+      <td style="border: 1px solid #30363d; padding: 10px;">3: 0x10 for `i` | 0x10 for `d`</td>
+      <td style="border: 1px solid #30363d; padding: 10px;">3: variabl `i` whit `%i`: `16` | variabl `d` whit `%d`: `0` | variabl `d` whit `%i`: `16` | variabl `d` whit `%d`: `0`</td>
+    </tr>
+  </tbody>
+</table>
+
+#### **`%d` can't work whit hexadicimal in scanf**
 * **Unsigned Integers:** `%u`
 * **Hexadecimals (Lower/Upper):** `%x`, `%X`
 * **Percentage sign:** `%%`
