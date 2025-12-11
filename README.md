@@ -35,7 +35,6 @@ code:
 
 	printf("variabl i whit %%i: %i | variabl i whit %%d: %d\n", i, i);
 	printf("variabl d whit %%i: %i | variabl d whit %%d: %d\n", d, d);
-
   </tr>
 </table>
 
