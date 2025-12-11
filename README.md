@@ -62,14 +62,15 @@ ________________________________________________________________________________
 This project relied on the following resources for understanding the C standard library and variable argument handling:
 
 * **CS50 Manual**: General C documentation and function reference.
-* 
+
 [![CS50 Manual](https://img.shields.io/badge/CS50%20Manual-Reference-red?style=for-the-badge&logo=appveyor)](https://manual.cs50.io)
 
 * **GeeksforGeeks**: Documentation and examples for working with variable-length arguments in C.
+
 [![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-Variable%20Args-darkgreen?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/c/variable-length-argument-c/)
 
 * **Stack Overflow**: Understanding the internal structure and mechanics of the `va_list` implementation on x86-64 architecture.
-* 
+
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-va_list%20x86--64-orange?style=for-the-badge&logo=stackoverflow&logoColor=white)](https://stackoverflow.com/questions/4958384/what-is-the-format-of-the-x86-64-va-list-structure)
 
 
