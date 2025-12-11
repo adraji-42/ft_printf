@@ -53,7 +53,7 @@ code:
   </thead>
   <tbody>
     <tr style="color: #c9d1d9;">
-      <td style="border: 1px solid #30363d; padding: 10px 20px;"> 1 | 1</td>
+      <td style="border: 1px solid #30363d; padding: 10px padding-right: 20px;"> 1 | 1</td>
       <td style="border: 1px solid #30363d; padding: 10px;"> 10 for `i` | 10 for `d`</td>
       <td style="border: 1px solid #30363d; padding: 10px;"> variabl `i` whit `%i`: `10` | variabl `d` whit `%d`: `10` | variabl `d` whit `%i`: `10` | variabl `d` whit `%d`: `10`</td>
     </tr>
