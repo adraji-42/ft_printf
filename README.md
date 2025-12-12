@@ -20,7 +20,7 @@ This project focuses on two core technical aspects:
 * **Integers (Decimal/Signed):**
 	`%d` or `%i`: The difference between %d and %i is not at the output level but at the input level.
 	**For example, metal**
-  
+
 <table border="1" style="border-collapse: collapse; border-color: #30363d; background-color: #0d1117; width: 100%;">
   <tr>
     <td style="border: 1px solid #30363d; padding: 10px; color: #c9d1d9;">
