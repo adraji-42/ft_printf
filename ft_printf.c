@@ -6,7 +6,7 @@
 /*   By: adraji <adraji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 01:09:40 by adraji            #+#    #+#             */
-/*   Updated: 2025/12/11 14:47:40 by adraji           ###   ########.fr       */
+/*   Updated: 2025/12/12 07:40:43 by adraji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	ft_switch(va_list args, const char fms)
 {
 	char	*str;
-	int		count;
+	int		save;
 
 	if (fms == 'd' || fms == 'i')
 		str = ft_itoa(va_arg(args, int));
@@ -33,12 +33,12 @@ static int	ft_switch(va_list args, const char fms)
 		return (ft_putchar('%'));
 	else
 	{
-		count = ft_putchar('%') + ft_putchar(fms);
-		if (count < 1)
-			return (-1);
-		return (count);
+		str = ft_strdup("% ");
+		str[1] = fms;
 	}
-	return (ft_putstr(str));	
+	save = ft_putstr(str);
+	free (str);
+	return (save);
 }
 
 int	ft_printf(const char *fms, ...)
@@ -56,20 +56,16 @@ int	ft_printf(const char *fms, ...)
 	while (fms[i])
 	{
 		if (fms[i] != '%')
-		{
 			save = ft_putchar(fms[i++]);
-			if (save < 0)
-				return (va_end(args), -1);
-			count += save;
-		}
 		else if (fms[++i])
+			save = ft_switch(args, fms[i++]);
+		if (save < 0)
 		{
-			save = ft_switch(args, fms[i]);
-			if (save < 0)
-				return (va_end(args), -1);
-			count += save;
-			i++;
+			va_end(args);
+			return (-1);
 		}
+		count += save;
 	}
-	return (va_end(args), count);
+	va_end(args);
+	return (count);
 }

@@ -6,7 +6,7 @@
 #    By: adraji <adraji@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/31 15:47:54 by adraji            #+#    #+#              #
-#    Updated: 2025/12/07 11:03:20 by adraji           ###   ########.fr        #
+#    Updated: 2025/12/12 06:49:30 by adraji           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ HEADER      = ft_printf.h
 
 LIBFT_DIR   = libft
 CC          = cc
-CFLAGS      = -Wall -Wextra -Werror -I $(LIBFT_DIR) -I .
+CFLAGS      = -Wall -Wextra -Werror
 
 SRC_LIBFT   = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
               ft_isdigit.c ft_isprint.c ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c \
