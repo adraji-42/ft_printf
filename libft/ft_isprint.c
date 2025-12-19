@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+
+t_bool	ft_isprint(int c)
 {
 	return (c < 127 && c > 31);
 }
