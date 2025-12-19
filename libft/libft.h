@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include "../ft_printf_data_utils.h"
 
 //	Prevents redefinition conflicts if the standard <limits.h> header
 //		is also included.
