@@ -13,6 +13,8 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
+// --- REQUIRED LIBRARIES ---
+
 # include <stdlib.h>
 # include <unistd.h>
 
